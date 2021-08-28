@@ -4,13 +4,19 @@ body {
 }
 
 h1 {
-    font-size: calc(1rem + 3vw);
+    font-size: calc(0.5rem + 2vw);
+}
+
+.logo {
+    span {
+        font-size: calc(0.1rem + 1.5vw);
+    }
 }
 
 nav {
-    font-size: calc(0.5rem + 2vh);
+    font-size: calc(0.2rem + 1vw);
 }
 
 footer {
-    font-size: calc(0.5rem + 1vh);
+    font-size: calc(0.1rem + 1vw);
 }

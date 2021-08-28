@@ -1,3 +1,12 @@
 body {
-  background: white;
+  background:rgb(255,255,255);
+}
+
+nav {
+  line-height: 1;
+
+  a {
+    outline: none;
+    text-decoration: none;
+  }
 }
