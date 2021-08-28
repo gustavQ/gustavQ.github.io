@@ -82,6 +82,22 @@ select {
 }
 
 body {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: calc(1rem + 3vw);
+}
+
+nav {
+  font-size: calc(0.5rem + 2vh);
+}
+
+footer {
+  font-size: calc(0.5rem + 1vh);
+}
+
+body {
   display: -ms-grid;
   display: grid;
 }
