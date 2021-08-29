@@ -11,6 +11,10 @@ nav a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
 *,
@@ -112,6 +116,40 @@ footer {
 body {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 'header' 'main';
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr minmax(10px, 600px) 1fr;
+      grid-template-columns: 1fr minmax(10px, 600px) 1fr;
+}
+
+.content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .content {
@@ -126,30 +164,33 @@ body {
           align-items: center;
 }
 
+.img-container {
+  width: 65%;
+}
+
 footer {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 1 / 3 / 4;
   text-align: center;
 }
 
-header {
+header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-header .item {
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 200px;
-          flex: 1 200px;
+.logo {
+  text-align: left;
 }
 
 .logo span::after {
@@ -158,12 +199,7 @@ header .item {
   display: block;
 }
 
-.content {
-  height: 80vh;
-}
-
-.content > img {
-  max-width: 100%;
-  max-height: 90%;
+nav {
+  text-align: right;
 }
 /*# sourceMappingURL=main.css.map */

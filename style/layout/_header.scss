@@ -1,14 +1,8 @@
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-header {
-  .item {
-    text-align: center;
-    flex: 1 200px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -17,5 +11,11 @@ header {
     content: "";
     clear: both;
     display: block;
-  }  
+  }
+
+  text-align: left;
+}
+
+nav {
+  text-align: right;
 }
