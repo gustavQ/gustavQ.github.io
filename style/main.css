@@ -21,7 +21,8 @@ ul {
 
 h1,
 p,
-a {
+a,
+li {
   color: black;
 }
 
@@ -195,8 +196,8 @@ footer {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (minmax(0, 1fr))[6];
+      grid-template-columns: repeat(6, minmax(0, 1fr));
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
 }
@@ -233,5 +234,18 @@ nav {
       align-self: center;
   padding-bottom: 1em;
   padding-top: 1em;
+}
+
+.nav-link {
+  will-change: transform;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  transition: -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
+}
+
+.nav-link:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 /*# sourceMappingURL=main.css.map */

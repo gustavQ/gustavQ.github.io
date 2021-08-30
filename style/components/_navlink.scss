@@ -1,0 +1,8 @@
+.nav-link {
+  will-change: transform;
+  transition: transform 250ms ease-out;
+}
+
+.nav-link:hover {
+  transform: translateX(10px);
+}
