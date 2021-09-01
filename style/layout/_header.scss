@@ -1,7 +1,13 @@
-header {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    grid-template-rows: 1fr;
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -12,18 +18,32 @@ header {
   }
 
   text-align: left;
-  grid-column: 2 / 3;
-  grid-row: 1;
-  align-self: center;
   padding-bottom: 1em;
   padding-top: 1em;
 }
 
-nav {
+nav ul {
   text-align: right;
-  grid-column: 5 / 6;
-  grid-row: 1;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 1em;
   padding-top: 1em;
+}
+
+@media (max-width: 640px) {
+  .container {
+    text-align: center;
+  }
+
+  .container-nav {
+    flex-direction: column;
+  }
+
+  .logo span {
+    display: inline-block;
+  }
+
+  nav ul {
+    text-align: center;
+  }
 }
