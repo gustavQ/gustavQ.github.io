@@ -19,13 +19,6 @@ ul {
   padding: 0;
 }
 
-h1,
-p,
-a,
-li {
-  color: black;
-}
-
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
 *,
@@ -104,16 +97,29 @@ select {
   }
 }
 
+/* kaisei-harunoumi-regular - latin */
+@font-face {
+  font-family: 'Kaisei HarunoUmi';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../resources/fonts/kaisei-harunoumi-v1-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../../resources/fonts/kaisei-harunoumi-v1-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../resources/fonts/kaisei-harunoumi-v1-latin-regular.woff2") format("woff2"), url("../../resources/fonts/kaisei-harunoumi-v1-latin-regular.woff") format("woff"), url("../../resources/fonts/kaisei-harunoumi-v1-latin-regular.ttf") format("truetype"), url("../../resources/fonts/kaisei-harunoumi-v1-latin-regular.svg#KaiseiHarunoUmi") format("svg");
+  /* Legacy iOS */
+}
+
 body {
+  font-family: 'Courier New', Courier, monospace;
   font-size: 10px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-family: 'Kaisei HarunoUmi', 'Times New Roman', Times, serif;
+  font-size: 2rem;
 }
 
 .logo span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 nav a {
@@ -122,6 +128,13 @@ nav a {
 
 footer {
   font-size: 1rem;
+}
+
+h1,
+p,
+a,
+li {
+  color: black;
 }
 
 body {
