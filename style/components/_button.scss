@@ -1,0 +1,19 @@
+.nav-btn {
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 0 , 0);
+    display: none;
+    border-radius: 50%;
+
+    @include respond-to('small')
+    {
+        display: inline-block;
+    }
+}
+
+.nav-btn:hover {
+    background-color: red;
+}

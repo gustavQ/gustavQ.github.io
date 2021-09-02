@@ -109,13 +109,13 @@ select {
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Verdana, Tahoma, sans-serif;
   font-size: 10px;
 }
 
 h1 {
   font-family: 'Kaisei HarunoUmi', 'Times New Roman', Times, serif;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .logo span {
@@ -200,6 +200,12 @@ footer {
   height: 75vh;
 }
 
+@media (max-width: 480px) {
+  .img-container img {
+    padding: 0 1em;
+  }
+}
+
 footer {
   text-align: center;
   padding-bottom: 1em;
@@ -210,6 +216,12 @@ footer {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .container {
+    text-align: center;
+  }
 }
 
 .container-nav {
@@ -224,16 +236,39 @@ footer {
           align-items: center;
 }
 
+@media (max-width: 480px) {
+  .container-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .logo {
-  text-align: left;
   padding-bottom: 1em;
   padding-top: 1em;
 }
 
-.logo span::after {
-  content: "";
-  clear: both;
-  display: block;
+@media (max-width: 480px) {
+  .logo {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.logo h1 {
+  text-align: left;
 }
 
 nav ul {
@@ -249,21 +284,10 @@ nav ul {
   padding-top: 1em;
 }
 
-@media (max-width: 640px) {
-  .container {
-    text-align: center;
-  }
-  .container-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .logo span {
-    display: inline-block;
-  }
+@media (max-width: 480px) {
   nav ul {
     text-align: center;
+    display: none;
   }
 }
 
@@ -278,5 +302,33 @@ nav ul {
 .nav-link:hover {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
+}
+
+@media (max-width: 480px) {
+  .nav-link:hover {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.nav-btn {
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  width: 15px;
+  height: 15px;
+  background: black;
+  display: none;
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .nav-btn {
+    display: inline-block;
+  }
+}
+
+.nav-btn:hover {
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */

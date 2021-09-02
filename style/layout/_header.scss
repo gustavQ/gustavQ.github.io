@@ -19,19 +19,20 @@
 }
 
 .logo {
-  span::after {
-    content: "";
-    clear: both;
-    display: block;
-  }
-
-  text-align: left;
   padding-bottom: 1em;
   padding-top: 1em;
 
-  @include respond-to('small') {
-    display: inline-block;
-  } 
+  @include respond-to('small')
+  {
+    display: inline-grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.logo h1{
+  text-align: left;
 }
 
 nav ul {
@@ -43,5 +44,6 @@ nav ul {
 
   @include respond-to('small') {
     text-align: center;
+    display: none;
   } 
 }

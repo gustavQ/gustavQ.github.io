@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 @import
+  'utils/variables',
+  'utils/mixins';
+
+@import
   'base/base',
   'base/reset',
   'base/typography';
@@ -16,8 +20,5 @@
   'pages/index';
 
 @import
-  'components/navlink';
-
-@import
-  'utils/variables',
-  'utils/mixins';
+  'components/navlink',
+  'components/button';
