@@ -196,8 +196,8 @@ footer {
           align-items: center;
 }
 
-.img-container {
-  width: 60%;
+.img-container img {
+  height: 75vh;
 }
 
 footer {

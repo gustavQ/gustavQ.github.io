@@ -2,12 +2,20 @@
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+
+  @include respond-to('small') {
+    text-align: center;
+  }    
 }
 
 .container-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include respond-to('small') {
+    flex-direction: column;
+  }   
 }
 
 .logo {
@@ -20,6 +28,10 @@
   text-align: left;
   padding-bottom: 1em;
   padding-top: 1em;
+
+  @include respond-to('small') {
+    display: inline-block;
+  } 
 }
 
 nav ul {
@@ -28,22 +40,8 @@ nav ul {
   flex-direction: column;
   padding-bottom: 1em;
   padding-top: 1em;
-}
 
-@media (max-width: 640px) {
-  .container {
+  @include respond-to('small') {
     text-align: center;
-  }
-
-  .container-nav {
-    flex-direction: column;
-  }
-
-  .logo span {
-    display: inline-block;
-  }
-
-  nav ul {
-    text-align: center;
-  }
+  } 
 }

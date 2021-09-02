@@ -16,4 +16,8 @@
   'pages/index';
 
 @import
-  'components/navlink'
+  'components/navlink';
+
+@import
+  'utils/variables',
+  'utils/mixins';
