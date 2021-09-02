@@ -4,6 +4,11 @@
   align-items: center;
 }
 
-.img-container {
-  width: 60%
+.img-container img {
+  height: 75vh;
+
+  @include respond-to('small') {
+    padding: 0 1em;
+  }  
 }
+
