@@ -20,11 +20,10 @@ body {
 h1 {
   font-family: 'Kaisei HarunoUmi', 'Times New Roman', Times, serif;
   font-size: 4rem;
-}
 
-.logo {
-  span {
-    font-size: 1.2rem;
+  @include respond-to('small')
+  {
+    font-size: 2.5rem;
   }
 }
 

@@ -118,8 +118,10 @@ h1 {
   font-size: 4rem;
 }
 
-.logo span {
-  font-size: 1.2rem;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 nav a {
@@ -216,6 +218,7 @@ footer {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 @media (max-width: 480px) {
@@ -245,25 +248,40 @@ footer {
   }
 }
 
-.logo {
-  padding-bottom: 1em;
-  padding-top: 1em;
-}
-
 @media (max-width: 480px) {
-  .logo {
-    display: -ms-inline-grid;
-    display: inline-grid;
+  .nav-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    width: 100%;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-header .header-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 1rem;
+  }
+  .nav-header .btn-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-header .btn-container .nav-btn {
+    float: right;
+    margin-right: 1rem;
   }
 }
 
@@ -312,7 +330,6 @@ nav ul {
 }
 
 .nav-btn {
-  text-align: center;
   text-decoration: none;
   border: none;
   width: 15px;
@@ -324,11 +341,12 @@ nav ul {
 
 @media (max-width: 480px) {
   .nav-btn {
-    display: inline-block;
+    display: block;
+    cursor: pointer;
   }
 }
 
 .nav-btn:hover {
-  background-color: red;
+  background: red;
 }
 /*# sourceMappingURL=main.css.map */

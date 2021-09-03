@@ -2,6 +2,7 @@
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+  padding-top: 20px;
 
   @include respond-to('small') {
     text-align: center;
@@ -18,16 +19,29 @@
   }   
 }
 
-.logo {
-  padding-bottom: 1em;
-  padding-top: 1em;
-
+.nav-header {
   @include respond-to('small')
   {
-    display: inline-grid;
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    width: 100%;
+    align-items: baseline;
+    justify-content: center;
+
+    .header-item{
+      flex: 1;
+      align-self: center;
+      margin: 0 1rem;
+    }
+    
+    .btn-container {
+      justify-content: center;
+
+      .nav-btn {
+        float: right;
+        margin-right: 1rem;
+      }
+    }
   }
 }
 

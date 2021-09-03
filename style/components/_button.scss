@@ -1,5 +1,4 @@
 .nav-btn {
-    text-align: center;
     text-decoration: none;
     border: none;
     width: 15px;
@@ -10,10 +9,11 @@
 
     @include respond-to('small')
     {
-        display: inline-block;
+        display: block;
+        cursor: pointer;
     }
 }
 
 .nav-btn:hover {
-    background-color: red;
+    background: red;
 }
