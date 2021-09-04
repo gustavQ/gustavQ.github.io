@@ -200,7 +200,6 @@ footer {
 
 .img-container img {
   height: 75vh;
-  height: -webkit-fill-available;
 }
 
 @media (max-width: 480px) {

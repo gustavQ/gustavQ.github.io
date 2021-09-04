@@ -6,7 +6,6 @@
 
 .img-container img {
   height: 75vh;
-  height: -webkit-fill-available;
 
   @include respond-to('small') {
     padding: 0 1rem;
