@@ -8,36 +8,15 @@
 .container-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
-  @include respond-to('small') {
-    flex-direction: column;
-  }   
+  align-items: center;  
 }
 
-.nav-control {
-  @include respond-to('small')
-  {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: baseline;
-    justify-content: center;
+.btn-container {
+  display: none;
 
-    .header-item{
-      flex: 1;
-      align-self: center;
-      margin: 0 1rem;
-    }
-    
-    .btn-container {
-      justify-content: center;
-
-      .nav-btn {
-        float: right;
-        margin-right: 1rem;
-      }
-    }
+  @include respond-to('small') {
+    display: block;
+    cursor: pointer;
   }
 }
 
@@ -49,13 +28,14 @@
   text-align: right;
   display: flex;
   flex-direction: column;
-  padding-bottom: 1em;
-  padding-top: 1em;
+  padding: 1em 0;
 
   @include respond-to('small') {
-    width: 100%;
     text-align: center;
-    display: block;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    left: 0;
+    background-color: rgb(255, 255, 255);
   } 
 }
