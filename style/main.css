@@ -2,21 +2,18 @@ body {
   background: white;
 }
 
-nav {
+ul {
   line-height: 1;
+  padding: 0;
 }
 
-nav a {
+a {
   outline: none;
   text-decoration: none;
 }
 
 img {
   max-width: 100%;
-}
-
-ul {
-  padding: 0;
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset/ */
@@ -124,18 +121,18 @@ body {
   font-size: 10px;
 }
 
-h1 {
+.nav-logo {
   font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
   font-size: 5rem;
 }
 
 @media (max-width: 480px) {
-  h1 {
+  .nav-logo {
     font-size: 3rem;
   }
 }
 
-nav a {
+.nav-link {
   font-size: 1rem;
 }
 
@@ -254,7 +251,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .nav-header {
+  .nav-control {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -270,7 +267,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .nav-header .header-item {
+  .nav-control .header-item {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -279,18 +276,18 @@ footer {
         align-self: center;
     margin: 0 1rem;
   }
-  .nav-header .btn-container {
+  .nav-control .btn-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .nav-header .btn-container .nav-btn {
+  .nav-control .btn-container .nav-btn {
     float: right;
     margin-right: 1rem;
   }
 }
 
-.logo h1 {
+.nav-logo {
   text-align: left;
 }
 

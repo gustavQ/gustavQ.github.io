@@ -15,7 +15,7 @@
   }   
 }
 
-.nav-header {
+.nav-control {
   @include respond-to('small')
   {
     display: flex;
@@ -41,7 +41,7 @@
   }
 }
 
-.logo h1{
+.nav-logo {
   text-align: left;
 }
 

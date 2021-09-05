@@ -2,19 +2,16 @@ body {
   background:rgb(255,255,255);
 }
 
-nav {
+ul {
   line-height: 1;
+  padding: 0;
+}
 
-  a {
-    outline: none;
-    text-decoration: none;
-  }
+a {
+  outline: none;
+  text-decoration: none;
 }
 
 img {
   max-width: 100%;
-}
-
-ul {
-  padding: 0;
 }
