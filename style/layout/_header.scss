@@ -2,11 +2,7 @@
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 20px;
-
-  @include respond-to('small') {
-    text-align: center;
-  }    
+  padding-top: 20px;  
 }
 
 .container-nav {
@@ -49,7 +45,7 @@
   text-align: left;
 }
 
-nav ul {
+.nav-menu {
   text-align: right;
   display: flex;
   flex-direction: column;
@@ -57,7 +53,9 @@ nav ul {
   padding-top: 1em;
 
   @include respond-to('small') {
+    width: 100%;
     text-align: center;
-    display: none;
+    display: block;
+    position: relative;
   } 
 }
