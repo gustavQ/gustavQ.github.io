@@ -241,6 +241,12 @@ footer {
           align-items: center;
 }
 
+@media (max-width: 480px) {
+  .container-nav .nav-logo {
+    padding-left: 20px;
+  }
+}
+
 .btn-container {
   display: none;
 }
@@ -249,6 +255,7 @@ footer {
   .btn-container {
     display: block;
     cursor: pointer;
+    padding-right: 25px;
   }
 }
 
@@ -274,9 +281,15 @@ footer {
     position: absolute;
     width: 100%;
     top: 4rem;
-    left: 0;
+    right: -100%;
     background-color: white;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
+}
+
+.nav-menu.show {
+  right: 0;
 }
 
 .nav-link {
@@ -310,5 +323,9 @@ footer {
 
 .nav-btn:hover {
   background: red;
+}
+
+.nav-btn.show {
+  background-color: darkblue;
 }
 /*# sourceMappingURL=main.css.map */
