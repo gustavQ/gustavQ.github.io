@@ -14,11 +14,7 @@
   }
 }
 
-.nav-btn:hover {
-  background: red;
-}
-
 .nav-btn.show {
-  transform: rotate(90deg);
   border-radius: 0;
+  transform: rotate(-90deg);
 }

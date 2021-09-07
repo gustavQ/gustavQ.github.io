@@ -318,13 +318,9 @@ footer {
   }
 }
 
-.nav-btn:hover {
-  background: red;
-}
-
 .nav-btn.show {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
   border-radius: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 /*# sourceMappingURL=main.css.map */
