@@ -250,7 +250,7 @@ footer {
 .btn-container {
   display: block;
   cursor: pointer;
-  padding-right: 1rem;
+  margin-right: 1rem;
 }
 
 .nav-logo {
