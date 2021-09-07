@@ -281,17 +281,20 @@ footer {
     position: absolute;
     width: 100%;
     top: 4rem;
-    right: -100%;
+    left: -100%;
     background-color: white;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    display: none;
+    padding-top: 20px;
   }
 }
 
+.nav-menu .nav-link {
+  padding-bottom: 10px;
+}
+
 .nav-menu.show {
-  right: 0;
-  display: block;
+  left: 0;
 }
 
 .nav-link {
