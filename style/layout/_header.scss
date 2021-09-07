@@ -46,9 +46,11 @@
     right: -100%;
     background-color: rgb(255, 255, 255);
     transition: 0.3s;
+    display: none;
   }
 }
 
 .nav-menu.show {
   right: 0;
+  display: block;
 }

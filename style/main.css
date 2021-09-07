@@ -285,11 +285,13 @@ footer {
     background-color: white;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    display: none;
   }
 }
 
 .nav-menu.show {
   right: 0;
+  display: block;
 }
 
 .nav-link {
