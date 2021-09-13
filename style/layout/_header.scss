@@ -2,30 +2,18 @@
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 20px;  
 }
 
 .container-nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
-  @include respond-to('small')
-  {
-    .nav-logo {
-      padding-left: 20px;
-    }
-  }
 }
 
 .btn-container {
   display: block;
   cursor: pointer;
-  margin-right: 1rem;
-}
-
-.nav-logo {
-  text-align: left;
 }
 
 .nav-menu {
@@ -33,6 +21,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
 
   width: 100%;
   padding: 1em 1em;
