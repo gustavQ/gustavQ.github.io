@@ -247,6 +247,7 @@ footer {
 .btn-container {
   display: block;
   cursor: pointer;
+  padding: 1em 0;
 }
 
 .nav-menu {
@@ -277,22 +278,15 @@ footer {
 }
 
 .nav-menu .nav-link {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .nav-menu-container {
-  position: absolute;
-  width: 100%;
-  top: 5rem;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 300ms, visibility 300ms;
-  transition: opacity 300ms, visibility 300ms;
+  display: none;
 }
 
 .nav-menu-container.show {
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 
 .nav-btn {
