@@ -1,5 +1,5 @@
 const navButton = document.querySelector(".btn-container");
-const navMenu = document.querySelector(".nav-menu");
+const navMenu = document.querySelector(".nav-menu-container");
 const button = document.querySelector(".nav-btn");
 const navLink = document.querySelectorAll(".nav-link");
 
