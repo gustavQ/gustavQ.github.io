@@ -147,6 +147,15 @@ li {
   color: black;
 }
 
+.about > p {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+}
+
 body {
   display: -ms-grid;
   display: grid;
@@ -214,6 +223,14 @@ footer {
   .img-container img {
     padding: 0 1rem;
   }
+}
+
+.about {
+  padding: 0 1rem;
+}
+
+.about p {
+  text-align: justify;
 }
 
 footer {
