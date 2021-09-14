@@ -33,11 +33,11 @@ body {
 }
 
 .nav-logo {
-  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-family: 'DM Serif Display', Georgia, 'Times New Roman', Times, serif;
   font-size: 5rem;
 
-  @include respond-to('small')
-  {
+  @include respond-to('small') {
     font-size: 3rem;
   }
 }
@@ -47,7 +47,7 @@ body {
 }
 
 footer {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 h1,

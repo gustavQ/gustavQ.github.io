@@ -122,7 +122,8 @@ body {
 }
 
 .nav-logo {
-  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-family: 'DM Serif Display', Georgia, 'Times New Roman', Times, serif;
   font-size: 5rem;
 }
 
@@ -137,7 +138,7 @@ body {
 }
 
 footer {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 h1,
@@ -320,17 +321,14 @@ footer {
 
 .nav-btn {
   text-decoration: none;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0.6rem 0.6rem 0 0.6rem;
-  border-color: black transparent transparent transparent;
-  -webkit-transition: border-width 300ms ease-in-out;
-  transition: border-width 300ms ease-in-out;
+  width: 1rem;
+  height: 0.2rem;
+  background: black;
+  -webkit-transition: height 300ms ease;
+  transition: height 300ms ease;
 }
 
 .nav-btn.show {
-  border-width: 0 0.6rem 0.6rem 0.6rem;
-  border-color: transparent transparent black transparent;
+  height: 0.8rem;
 }
 /*# sourceMappingURL=main.css.map */
