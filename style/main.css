@@ -153,7 +153,8 @@ li {
 }
 
 h1 {
-  font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-family: 'DM Serif Display', Georgia, 'Times New Roman', Times, serif;
   font-size: 1.8rem;
 }
 
