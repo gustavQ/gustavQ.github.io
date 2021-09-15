@@ -8,6 +8,14 @@
   align-items: center;
 }
 
+.img-container > img {
+  height: 70vh;
+
+  @include respond-to('small') {
+    height: unset;
+  }
+}
+
 .pages > p {
   padding: 10px 10px;
   text-align: justify;

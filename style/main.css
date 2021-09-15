@@ -222,6 +222,16 @@ footer {
           align-items: center;
 }
 
+.img-container > img {
+  height: 70vh;
+}
+
+@media (max-width: 480px) {
+  .img-container > img {
+    height: unset;
+  }
+}
+
 .pages > p {
   padding: 10px 10px;
   text-align: justify;
