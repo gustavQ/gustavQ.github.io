@@ -152,10 +152,11 @@ li {
   font-size: 1.2rem;
 }
 
-h1 {
+.banner > h1 {
   font-style: italic;
   font-family: 'DM Serif Display', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  color: white;
 }
 
 body {
@@ -233,6 +234,7 @@ footer {
 
 .pages p {
   text-align: justify;
+  padding: 20px 10px;
 }
 
 footer {
@@ -331,5 +333,18 @@ footer {
 
 .nav-btn.show {
   height: 0.8rem;
+}
+
+.banner {
+  max-width: 600px;
+  height: 200px;
+  position: relative;
+  background-color: black;
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 0;
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=main.css.map */
