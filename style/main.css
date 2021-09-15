@@ -213,28 +213,16 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 10px 20px;
 }
 
 .img-container img {
-  height: 75vh;
+  height: 80vh;
 }
 
-@media (max-width: 480px) {
-  .img-container img {
-    padding: 0 1rem;
-  }
-}
-
-.pages {
-  padding: 0 1rem;
-}
-
-.pages p {
+.pages > p {
+  padding: 10px 10px;
   text-align: justify;
-  padding: 20px 10px;
 }
 
 footer {
