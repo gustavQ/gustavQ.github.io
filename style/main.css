@@ -216,8 +216,10 @@ footer {
   padding: 10px 20px;
 }
 
-.img-container img {
-  height: 80vh;
+.first {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pages > p {
@@ -280,7 +282,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 480px) {

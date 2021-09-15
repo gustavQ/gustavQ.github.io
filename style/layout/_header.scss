@@ -28,7 +28,7 @@
   justify-content: center;
   
   background-color: rgb(255, 255, 255);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   @include respond-to('small') {
     flex-direction: column;
