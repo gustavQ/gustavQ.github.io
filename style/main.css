@@ -258,15 +258,9 @@ footer {
 }
 
 .btn-container {
-  display: none;
+  display: block;
   cursor: pointer;
   padding: 1em 0;
-}
-
-@media (max-width: 1024px) {
-  .btn-container {
-    display: block;
-  }
 }
 
 .nav-menu {
@@ -301,13 +295,7 @@ footer {
 }
 
 .nav-menu-container {
-  display: block;
-}
-
-@media (max-width: 1024px) {
-  .nav-menu-container {
-    display: none;
-  }
+  display: none;
 }
 
 .nav-menu-container.show {

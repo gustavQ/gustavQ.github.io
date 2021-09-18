@@ -12,13 +12,9 @@
 }
 
 .btn-container {
-  display: none;
+  display: block;
   cursor: pointer;
   padding: 1em 0;
-
-  @include respond-to('large') {
-    display: block;
-  }
 }
 
 .nav-menu {
@@ -40,11 +36,7 @@
 }
 
 .nav-menu-container {
-  display: block;
-
-  @include respond-to('large') {
-    display: none;
-  }
+  display: none;
 }
 
 .nav-menu-container.show {
