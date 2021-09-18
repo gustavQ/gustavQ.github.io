@@ -329,9 +329,15 @@ footer {
 
 .banner {
   max-width: 600px;
-  height: 200px;
+  height: 10rem;
   position: relative;
   background-color: black;
+}
+
+.banner img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner h1 {
