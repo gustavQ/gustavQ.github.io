@@ -2,21 +2,41 @@
   display: flex;
   justify-content: center;
   padding: 10px 20px;
+
+  height: 70vh;
+  @include respond-to('large') {
+    height: unset;
+  }
 }
 
 .pages {
   max-width: $content-max-width;
 }
 
-.first {
-  align-items: center;
+.img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  @include respond-to('large') {
+    flex-direction: column;
+  }
 }
 
 .img-container > img {
-  height: 70vh;
+  padding-right: 1px;
 
-  @include respond-to('small') {
-    height: unset;
+  &:last-child {
+    padding-right: 0px;
+  }
+
+  @include respond-to('large') {
+    padding-bottom: 1px;
+
+    &:last-child {
+      padding-bottom: 0px;
+    }
   }
 }
 
