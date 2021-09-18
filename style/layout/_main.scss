@@ -1,7 +1,7 @@
 main {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(0px, $content-max-width);
+  grid-template-columns: 1fr
 }
 
 .content {

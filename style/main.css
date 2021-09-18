@@ -186,8 +186,8 @@ main {
   display: grid;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  -ms-grid-columns: minmax(0px, 600px);
-      grid-template-columns: minmax(0px, 600px);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .content {
