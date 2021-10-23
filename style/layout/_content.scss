@@ -14,32 +14,13 @@
 
 .img-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  height: 70vh;
-  object-fit: cover;
-
-
-  @include respond-to('large') {
-    flex-direction: column;
-  }
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.img-container > img {
-  padding-right: 1px;
-
-  &:last-child {
-    padding-right: 0px;
-  }
-
-  @include respond-to('large') {
-    padding-bottom: 1px;
-
-    &:last-child {
-      padding-bottom: 0px;
-    }
-  }
+img {
+  height: 60vh;
 }
 
 .pages > p {

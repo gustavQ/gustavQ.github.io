@@ -1,0 +1,7 @@
+.main-nav-logo {
+  font-size: 6rem;
+  
+  @include respond-to('small') {
+    font-size: 5rem;
+  }
+}

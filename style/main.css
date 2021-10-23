@@ -125,7 +125,7 @@ body {
 .nav-logo {
   font-style: italic;
   font-family: 'DM Serif Display', Georgia, 'Times New Roman', Times, serif;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 @media (max-width: 480px) {
@@ -230,42 +230,17 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  overflow-x: auto;
-  height: 70vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
-@media (max-width: 1024px) {
-  .img-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.img-container > img {
-  padding-right: 1px;
-}
-
-.img-container > img:last-child {
-  padding-right: 0px;
-}
-
-@media (max-width: 1024px) {
-  .img-container > img {
-    padding-bottom: 1px;
-  }
-  .img-container > img:last-child {
-    padding-bottom: 0px;
-  }
+img {
+  height: 60vh;
 }
 
 .pages > p {
@@ -277,6 +252,14 @@ footer {
   text-align: center;
   padding-bottom: 1em;
   padding-top: 1em;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 .container {
@@ -344,6 +327,16 @@ footer {
 
 .nav-menu-container.show {
   display: block;
+}
+
+.main-nav-logo {
+  font-size: 6rem;
+}
+
+@media (max-width: 480px) {
+  .main-nav-logo {
+    font-size: 5rem;
+  }
 }
 
 .nav-btn {

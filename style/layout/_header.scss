@@ -1,3 +1,10 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
 .container {
   width: 90%;
   max-width: $website-max-width;

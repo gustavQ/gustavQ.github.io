@@ -35,7 +35,7 @@ body {
 .nav-logo {
   font-style: italic;
   font-family: 'DM Serif Display', Georgia, 'Times New Roman', Times, serif;
-  font-size: 5rem;
+  font-size: 3rem;
 
   @include respond-to('small') {
     font-size: 3rem;
