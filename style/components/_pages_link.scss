@@ -1,0 +1,10 @@
+.pages p > a
+{
+    background: black;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+        font-style: italic;
+    }
+}

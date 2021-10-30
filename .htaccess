@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^index.html$ http://www.gustavoquintela.com [R=301,L]
+
+RewriteRule ^html\/([a-z]+).html$ /$1 [L,NC,R]
