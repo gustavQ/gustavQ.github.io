@@ -5,6 +5,10 @@ header {
   z-index: 1;
 }
 
+header.index {
+  position: static;
+}
+
 .container {
   width: 90%;
   max-width: $website-max-width;
