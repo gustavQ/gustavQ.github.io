@@ -245,7 +245,8 @@ footer {
 
 .pages > p {
   padding: 10px 10px;
-  text-align: justify;
+  text-align: left;
+  word-spacing: 4px;
 }
 
 footer {
